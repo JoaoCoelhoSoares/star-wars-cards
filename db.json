@@ -1,0 +1,36 @@
+{
+  "personagens": [
+    {
+      "id": 1,
+      "nome": "Jar Jar Binks",
+      "habilidade": "Nenhuma",
+      "planeta": "Tatooine",
+      "armas": "Nenhuma",
+      "avatar": "http://especiais.ne10.uol.com.br/starwars/wp-content/uploads/2015/12/jar_jar-300x300.png"
+    },
+    {
+      "id": 2,
+      "nome": "Darth Vader",
+      "habilidade": "Darth Vader lança seu sabre de luz, enforca os adversários e usa sua fúria profunda. Fúria Concentrada: Darth Vader causa mais dano e pode absorver mais dano. Arremesso de Sabre: Vader lança seu sabre de luz contra os inimigos",
+      "planeta": "Tatooine",
+      "armas": "Sabre de luz azul / vermelho",
+      "avatar": "http://especiais.ne10.uol.com.br/starwars/wp-content/uploads/2015/12/darth_vader-300x300.png"
+    },
+    {
+      "id": 3,
+      "nome": "Boba Fett",
+      "habilidade": "Boba Fett é um personagem extremamente versátil, equipado com uma variedade de poderosas armas. O uso de sua Propulsor dá a ele um elemento de verticalidade que pode ser difícil de seguir.",
+      "planeta": "Kamino",
+      "armas": "Rifle EE-3 e Jetpack",
+      "avatar": "http://especiais.ne10.uol.com.br/starwars/wp-content/uploads/2015/12/boba-300x300.png"
+    },
+    {
+      "id": 4,
+      "nome": "Darth Sidious",
+      "habilidade": "Apesar de parecer fraco e frágil, Darth Sidious possui uma variedade de habilidades de combate e suporte para ajudar a virar a maré da batalha.",
+      "planeta": "Naboo",
+      "armas": "Raios da força e sabre de luz",
+      "avatar": "http://especiais.ne10.uol.com.br/starwars/wp-content/uploads/2015/12/darth_sidious-1-300x300.png"
+    }
+  ]
+}

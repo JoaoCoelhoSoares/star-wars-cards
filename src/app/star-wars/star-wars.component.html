@@ -1,0 +1,50 @@
+<div id="divCards">
+    <div class=" card" style="width: 18rem;" *ngFor="let personagem of personagens">
+        <img class="card-img-top" src="{{personagem.avatar}}" alt="Card image cap">
+        <div class="card-body">
+            <p class="card-title"> <b>{{personagem.nome}}</b></p>
+            <p class="card-text"><b>Habilidade:</b> {{personagem.habilidade}}
+                <br>
+                <b>Planeta:</b> {{personagem.planeta}}
+                <br>
+                <b>Arma:</b> {{personagem.armas}}
+            </p>
+        </div>
+    </div>
+</div>
+<div id="divBotoes">
+    <button type="button" class="btn btn-primary" (click)="obterTodos()">Obter todos</button>
+    <button type="button" class="btn btn-primary" (click)="divId=true; divIdAddUm = true">Obter somente 1</button>
+    <button type="button" class="btn btn-primary"
+        (click)="divPersonagem=true; divAdicionarPersonagem = true">Adicionar</button>
+    <button type="button" class="btn btn-primary"
+        (click)="divPersonagem=true; divAtualizarPersonagem = true">Atualizar</button>
+    <button type="button" class="btn btn-primary" (click)="divId=true; divIdRemover = true">Remover</button>
+</div>
+
+<div id="divPersonagem" *ngIf="divPersonagem">
+    <div>
+        <label for="idImput">Id:</label>
+        <input type="number" id="idImput" [(ngModel)]="dadosPersonagem.id" />
+        <label for="nomeImput">Nome:</label>
+        <input type="text" id="nomeImput" [(ngModel)]="dadosPersonagem.nome" />
+        <label for="habilidadeImput">Habilidade</label>
+        <input type="text" id="habilidadeImput" [(ngModel)]="dadosPersonagem.habilidade" />
+        <label for="planetaImput">Planeta:</label>
+        <input type="text" id="planetaImput" [(ngModel)]="dadosPersonagem.planeta" />
+        <label for="armasImput">Armas</label>
+        <input type="text" id="armasImput" [(ngModel)]="dadosPersonagem.armas" />
+        <label for="avatarImput">Avatar</label>
+        <input type="text" id="avatarImput" [(ngModel)]="dadosPersonagem.avatar" />
+    </div>
+    <button type="button" class="btn btn-primary" (click)="addPersonagem()" *ngIf="divAdicionarPersonagem">Add
+        personagem</button>
+    <button type="button" class="btn btn-primary" (click)="atualizar()"
+        *ngIf="divAtualizarPersonagem">Atualizar</button>
+</div>
+
+<div id="divIdPersonagem" *ngIf="divId">
+    <span>Id: <input type="number" [(ngModel)]="idPersonagem" /></span>
+    <button type="button" class="btn btn-primary" (click)="obterPorId(idPersonagem)" *ngIf="divIdAddUm">Obter</button>
+    <button type="button" class="btn btn-primary" (click)="remover(idPersonagem)" *ngIf="divIdRemover">Remover</button>
+</div>
